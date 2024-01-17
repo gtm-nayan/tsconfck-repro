@@ -1,0 +1,13 @@
+diff --git a/src/parse.js b/src/parse.js
+index dbca735c738ec2367f574abf46abc0c430834223..0dfd1b304599c93edca05bf743570e0bad1cce38 100644
+--- a/src/parse.js
++++ b/src/parse.js
+@@ -60,6 +60,8 @@ export async function parse(filename, options) {
+ 		let result;
+ 		if (filename !== tsconfigFile && cache?.hasParseResult(tsconfigFile)) {
+ 			result = await cache.getParseResult(tsconfigFile);
++			console.trace("Hi dominik!\n");
++			console.log(JSON.stringify({ result, filename}, null, '\t'));
+ 		} else {
+ 			result = await parseFile(tsconfigFile, cache, filename === tsconfigFile);
+ 			await Promise.all([parseExtends(result, cache), parseReferences(result, options)]);

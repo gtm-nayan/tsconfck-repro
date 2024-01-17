@@ -1,0 +1,29 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+patchedDependencies:
+  tsconfck@3.0.1:
+    hash: mpwika6mrhwsgd5vuvmb6p6rpa
+    path: patches/tsconfck@3.0.1.patch
+
+dependencies:
+  tsconfck:
+    specifier: ^3.0.1
+    version: 3.0.1(patch_hash=mpwika6mrhwsgd5vuvmb6p6rpa)
+
+packages:
+
+  /tsconfck@3.0.1(patch_hash=mpwika6mrhwsgd5vuvmb6p6rpa):
+    resolution: {integrity: sha512-7ppiBlF3UEddCLeI1JRx5m2Ryq+xk4JrZuq4EuYXykipebaq1dV0Fhgr1hb7CkmHt32QSgOZlcqVLEtHBG4/mg==}
+    engines: {node: ^18 || >=20}
+    hasBin: true
+    peerDependencies:
+      typescript: ^5.0.0
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+    dev: false
+    patched: true

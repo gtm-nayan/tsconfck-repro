@@ -1,0 +1,11 @@
+{
+	"type": "module",
+	"dependencies": {
+		"tsconfck": "^3.0.1"
+	},
+	"pnpm": {
+		"patchedDependencies": {
+			"tsconfck@3.0.1": "patches/tsconfck@3.0.1.patch"
+		}
+	}
+}
